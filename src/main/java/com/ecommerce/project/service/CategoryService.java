@@ -8,7 +8,7 @@ import java.util.List;
 
 //Interface to promote loose coupling
 public interface CategoryService {
-    CategoryResponse getALlCategories();
+    CategoryResponse getALlCategories(Integer pageNumber , Integer pageSize);
     CategoryDTO createCategory(CategoryDTO categoryDTO);
 
     CategoryDTO deleteCategory(Long categoryId);
